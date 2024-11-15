@@ -1,6 +1,7 @@
 import './Nav.css'
 
-export default function Nav(props) {
+
+export default function Nav({links}) {
     return(
         <nav className="nav-bar">
             <div className="upper-nav">
@@ -19,12 +20,7 @@ export default function Nav(props) {
                     <div className="right-upper-nav">
                         <ul className="cover-contact-about">
                             <li className="trigger"><a href="/#">VISIT SPRINGFIELD!</a></li>
-                            <li className="trigger"><a href="/#">MENU ITEM</a>
-                                <ul className="submenu">
-                                    <li><a href="/#">Link 1</a></li>
-                                    <li><a href="/#">Link 2</a></li>
-                                </ul>
-                            </li>
+                            
                         </ul>
                         <button className="btn-donate">DONATE</button>
                     </div>
