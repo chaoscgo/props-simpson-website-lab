@@ -1,3 +1,4 @@
-.navLink {
-    text: blue;
+.navlink {
+    display: inline-block;
+    padding: 5px 50px 5px 50px;
 }

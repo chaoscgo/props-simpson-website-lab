@@ -1,4 +1,4 @@
-import '../Nav/Nav.css'
+import './NavbarLink.css'
 
 const NavbarLink = (props) => {
     return (
