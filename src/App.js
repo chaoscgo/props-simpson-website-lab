@@ -21,7 +21,9 @@ const navLinks = [
 function App() {
   return (
     <div>
-      <Nav links={navLinks} />
+      <section>
+        <Nav links={navLinks} />
+      </section>
       <section className="blog-items team-cards">
           <div className="inner-wrapper">
             <div className="blog-container">

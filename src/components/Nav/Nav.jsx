@@ -1,4 +1,5 @@
 import './Nav.css'
+import NavbarLink from '../NavbarLink/NavbarLink.jsx';
 
 
 export default function Nav({links}) {
@@ -20,7 +21,7 @@ export default function Nav({links}) {
                     <div className="right-upper-nav">
                         <ul className="cover-contact-about">
                             <li className="trigger"><a href="/#">VISIT SPRINGFIELD!</a></li>
-                            
+                            <li className="trigger"><a href="/#">MENU ITEM</a></li>
                         </ul>
                         <button className="btn-donate">DONATE</button>
                     </div>
@@ -29,37 +30,10 @@ export default function Nav({links}) {
 
             <div className="lower-nav">
                 <ul className="lower-nav-ul">
-                    <li className="trigger"><a href="/#">MENU ITEM</a>
-                        <ul className="submenu">
-                            <li><a href="/#">Link 1</a></li>
-                            <li><a href="/#">Link 2</a></li>
-                        </ul>
-                    </li>
-                    <li className="trigger"><a href="/#">MENU ITEM</a>
-                        <ul className="submenu">
-                            <li><a href="/#">Link 1</a></li>
-                            <li><a href="/#">Link 2</a></li>
-                        </ul>
-                    </li>
-                    <li className="trigger"><a href="/#">MENU ITEM</a>
-                        <ul className="submenu">
-                            <li><a href="/#">Link 1</a></li>
-                            <li><a href="/#">Link 2</a></li>
-                        </ul>
-                    </li>
-                    <li className="trigger"><a href="/#">MENU ITEM</a>
-                        <ul className="submenu">
-                            <li><a href="/#">Link 1</a></li>
-                            <li><a href="/#">Link 2</a></li>
-                        </ul>
-                    </li>
-                    <li className="trigger"><a href="/#">MENU ITEM</a>
-                        <ul className="submenu">
-                            <li><a href="/#">Link 1</a></li>
-                            <li><a href="/#">Link 2</a></li>
-                        </ul>
-                    </li>
-                    <li className="trigger"><a href="/#">MENU ITEM</a>
+                    <li className="trigger">
+                        {links.map((link) => (
+                            <NavbarLink href={link.href} text={link.text} />
+                        ))}
                         <ul className="submenu">
                             <li><a href="/#">Link 1</a></li>
                             <li><a href="/#">Link 2</a></li>
